@@ -1,0 +1,1 @@
+loadRelative("Classes/Soliloque.scd");
