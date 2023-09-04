@@ -4880,13 +4880,8 @@ defer{
 		.states_([["STOP",Color.white,Color.new255(136,27,20)]])
 		.action_{| view |
 			"SOLILOQUE: Stop".postln;
-			fork{
-				~pat.stop;
-				s.sync;
-				~pat.reset;
-			};
-			// Server.freeAll;
-			// CmdPeriod.run;
+			CmdPeriod.run;
+			// Server.freeAll
 			durations !? { durations.string = "" };
 			theGoButton;
 		};
